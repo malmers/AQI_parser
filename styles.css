@@ -1,0 +1,11 @@
+#input_bytes:valid {
+  border-color: greenyellow;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+section {
+  display: flex;
+}
