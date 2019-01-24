@@ -18,10 +18,47 @@ window.onload = function () {
     document.getElementById("location").value = location;
     document.getElementById("particle").value = particle;
 
-    document.getElementById("status_value").value = parseInt(status, 2);
-    document.getElementById("type_value").value = parseInt(type, 2);
+    update_status(status);
+    update_type(type);
+    update_location(location);
     document.getElementById("aqi_value").value = parseInt(aqi, 2);
-    document.getElementById("location_value").value = parseInt(location, 2);
     document.getElementById("particle_value").value = parseInt(particle, 2);
   }
+}
+
+function update_status(status) {
+  status = parseInt(status, 2)
+  switch(status) {
+    case 0: status = "StatusInvalid"; break;
+    case 1: status = "StatusValid"; break;
+    case 2: status = "StatusUnavailable"; break;
+    case 3: status = "StatusServiceRequired"; break;
+    default:
+      break;
+  }
+  document.getElementById("status_value").value = status;
+}
+
+function update_type(type) {
+  type = parseInt(type, 2)
+  switch(type) {
+    case 0: type = "TypeInvalid"; break;
+    case 1: type = "TypePM25"; break;
+    case 2: type = "TypePM10"; break;
+    default:
+      break;
+  }
+  document.getElementById("type_value").value = type;
+}
+
+function update_location(location) {
+  location = parseInt(location, 2)
+  switch(location) {
+    case 0: location = "LocationInvalid"; break;
+    case 1: location = "LocationInside"; break;
+    case 2: location = "LocationOutside"; break;
+    default:
+      break;
+  }
+  document.getElementById("location_value").value = location;
 }
