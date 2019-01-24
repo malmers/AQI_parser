@@ -17,5 +17,11 @@ window.onload = function () {
     document.getElementById("aqi").value = aqi;
     document.getElementById("location").value = location;
     document.getElementById("particle").value = particle;
+
+    document.getElementById("status_value").value = parseInt(status, 2);
+    document.getElementById("type_value").value = parseInt(type, 2);
+    document.getElementById("aqi_value").value = parseInt(aqi, 2);
+    document.getElementById("location_value").value = parseInt(location, 2);
+    document.getElementById("particle_value").value = parseInt(particle, 2);
   }
 }
