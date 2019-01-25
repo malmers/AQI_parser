@@ -6,6 +6,6 @@ input:invalid {
   border-color: red;
 }
 
-#binary {
+#output {
   display: flex;
 }
