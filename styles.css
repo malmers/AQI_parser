@@ -33,6 +33,10 @@ main {
   align-items: center;
 }
 
+#input > input {
+  font-size: 1.3em;
+}
+
 .output {
   display: flex;
   grid-row-start: 2;
