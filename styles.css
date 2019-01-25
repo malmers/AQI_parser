@@ -24,6 +24,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-width: 800px;
+  grid-row-gap: 40px;
 }
 
 #input {
@@ -41,4 +42,9 @@ main {
   display: flex;
   grid-row-start: 2;
   flex-direction: column;
+}
+
+.output > h5 {
+  margin: 5px 0;
+  text-align: center;
 }
